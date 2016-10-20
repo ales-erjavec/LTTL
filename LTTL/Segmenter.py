@@ -1229,7 +1229,7 @@ def _merge_duplicate_segments(segmentation, take_first=False):
     :return: output segmentation with merged segments
     """
 
-    new_segments = Segmentation()
+    new_segments = Segmentation(label=segmentation.label)
 
     last_seen = None
 
